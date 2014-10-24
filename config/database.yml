@@ -83,3 +83,4 @@ production:
   database: curva_production
   username: curva
   password: <%= ENV['CURVA_DATABASE_PASSWORD'] %>
+
