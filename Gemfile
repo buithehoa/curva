@@ -14,6 +14,8 @@ gem 'uglifier', '>= 1.3.0'
 
 gem 'slim', '~> 2.1.0'
 
+gem 'slim-rails', '~> 2.1.5'
+
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
 
