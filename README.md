@@ -1,6 +1,6 @@
 # curva
 
-# System Dependencies
+## System Dependencies
 * Acts As Taggable On
 * PostgreSQL
 * Ruby on Rails 4
