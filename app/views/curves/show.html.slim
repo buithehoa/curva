@@ -1,0 +1,15 @@
+p#notice = notice
+
+p
+  strong Question:
+  = @curf.question
+p
+  strong Answer:
+  = @curf.answer
+p
+  strong Status:
+  = @curf.status
+
+= link_to 'Edit', edit_curf_path(@curf)
+'|
+= link_to 'Back', curves_path

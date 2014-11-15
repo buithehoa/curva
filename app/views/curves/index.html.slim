@@ -1,0 +1,25 @@
+h1 Listing curves
+
+table
+  thead
+    tr
+      th Question
+      th Answer
+      th Status
+      th
+      th
+      th
+
+  tbody
+    - @curves.each do |curf|
+      tr
+        td = curf.question
+        td = curf.answer
+        td = curf.status
+        td = link_to 'Show', curf
+        td = link_to 'Edit', edit_curf_path(curf)
+        td = link_to 'Destroy', curf, data: {:confirm => 'Are you sure?'}, :method => :delete
+
+br
+
+= link_to 'New Curve', new_curf_path
