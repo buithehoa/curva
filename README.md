@@ -1,3 +1,13 @@
+# curva
+
+# System Dependencies
+* Acts As Taggable On
+* PostgreSQL
+* Ruby on Rails 4
+* Simple Form
+* Slim
+* Thin
+
 == README
 
 This README would normally document whatever steps are necessary to get the
