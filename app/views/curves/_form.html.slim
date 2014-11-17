@@ -1,9 +1,9 @@
-= form_for @curf do |f|
-  - if @curf.errors.any?
+= form_for @curve do |f|
+  - if @curve.errors.any?
     #error_explanation
-      h2 = "#{pluralize(@curf.errors.count, "error")} prohibited this curf from being saved:"
+      h2 = "#{pluralize(@curve.errors.count, "error")} prohibited this curve from being saved:"
       ul
-        - @curf.errors.full_messages.each do |message|
+        - @curve.errors.full_messages.each do |message|
           li = message
 
   .field
