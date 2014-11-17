@@ -4,7 +4,6 @@
 * Acts As Taggable On
 * PostgreSQL
 * Ruby on Rails 4
-* Simple Form
 * Slim
 * Thin
 
