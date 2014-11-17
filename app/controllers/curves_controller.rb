@@ -69,6 +69,6 @@ class CurvesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def curve_params
-      params.require(:curve).permit(:question, :answer, :status)
+      params.require(:curve).permit(:question, :answer, :status, :tag_list)
     end
 end

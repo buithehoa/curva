@@ -11,15 +11,15 @@ table
       th
 
   tbody
-    - @curves.each do |curf|
+    - @curves.each do |curve|
       tr
-        td = curf.question
-        td = curf.answer
-        td = curf.status
-        td = link_to 'Show', curf
-        td = link_to 'Edit', edit_curf_path(curf)
-        td = link_to 'Destroy', curf, data: {:confirm => 'Are you sure?'}, :method => :delete
+        td = curve.question
+        td = curve.answer
+        td = curve.status
+        td = link_to 'Show', curve
+        td = link_to 'Edit', edit_curve_path(curve)
+        td = link_to 'Destroy', curve, data: {:confirm => 'Are you sure?'}, :method => :delete
 
 br
 
-= link_to 'New Curve', new_curf_path
+= link_to 'New Curve', new_curve_path
