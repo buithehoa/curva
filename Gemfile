@@ -12,6 +12,10 @@ gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
+gem 'zurb-foundation', '~> 4.3.2'
+
+gem 'foundation-rails'
+
 gem 'slim', '~> 2.1.0'
 
 gem 'slim-rails', '~> 2.1.5'
