@@ -14,7 +14,7 @@ gem 'uglifier', '>= 1.3.0'
 
 gem 'zurb-foundation', '~> 4.3.2'
 
-gem 'foundation-rails'
+gem 'foundation-rails', '~> 5.4.5'
 
 gem 'slim', '~> 2.1.0'
 
@@ -24,10 +24,10 @@ gem 'slim-rails', '~> 2.1.5'
 gem 'coffee-rails', '~> 4.0.0'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-gem 'therubyracer', platforms: :ruby
+gem 'therubyracer', '~> 0.12.1', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
+gem 'jquery-rails', '~> 3.1.2'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks', '~> 2.3.0'
