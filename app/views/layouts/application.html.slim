@@ -8,15 +8,15 @@ html
 
   body
     div class="icon-bar six-up"
-      a class="item"
+      = link_to root_path, class: "item" do
         i class="fi-home"
         label Home
 
-      a class="item"
+      = link_to curves_path, class: "item" do
         i class="fi-puzzle"
         label Curves
 
-      a class="item"
+      = link_to skills_path, class: "item" do
         i class="fi-social-skillshare"
         label Skills
 
