@@ -4,9 +4,22 @@ html
     title Curva
 
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
-    = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
 
   body
+    div class="icon-bar six-up"
+      a class="item"
+        i class="fi-home"
+        label Home
+
+      a class="item"
+        i class="fi-puzzle"
+        label Curves
+
+      a class="item"
+        i class="fi-social-skillshare"
+        label Skills
+
     = yield
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
 

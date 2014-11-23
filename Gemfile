@@ -16,6 +16,8 @@ gem 'zurb-foundation', '~> 4.3.2'
 
 gem 'foundation-rails', '~> 5.4.5'
 
+gem 'foundation-icons-sass-rails', '~> 3.0.0'
+
 gem 'slim', '~> 2.1.0'
 
 gem 'slim-rails', '~> 2.1.5'
