@@ -20,6 +20,10 @@ html
         i class="fi-social-skillshare"
         label Skills
 
+      = link_to new_curve_path, class: "item" do
+        i class="fi-plus"
+        label Add a Curve
+
     = yield
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
 
