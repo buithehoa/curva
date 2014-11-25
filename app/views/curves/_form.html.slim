@@ -1,21 +1,22 @@
-= form_for @curve do |f|
-  - if @curve.errors.any?
-    #error_explanation
-      h2 = "#{pluralize(@curve.errors.count, "error")} prohibited this curve from being saved:"
-      ul
-        - @curve.errors.full_messages.each do |message|
-          li = message
+  = form_for @curve do |f|
+    - if @curve.errors.any?
+      #error_explanation
+        h2 = "#{pluralize(@curve.errors.count, "error")} prohibited this curve from being saved:"
+        ul
+          - @curve.errors.full_messages.each do |message|
+            li = message
 
-  .field
-    = f.label :question
-    = f.text_area :question, autofocus: true
-  .field
-    = f.label :answer
-    = f.text_area :answer
-  .field
-    = f.label :tag_list
-    = f.text_field :tag_list, autocomplete: "off"
-  .field
-    = f.label :status
-    = f.number_field :status
-  .actions = f.submit 'Save'
+    div
+      = f.label :question, "Question:"
+      = f.text_area :question, rows: 8,  autofocus: true
+
+    div
+      = f.label :tag_list
+      = f.text_field :tag_list, autocomplete: "off"
+
+    div
+      = f.label :status
+      = f.number_field :status
+
+    div
+      .actions = f.submit 'Save'
