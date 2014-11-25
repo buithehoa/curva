@@ -8,13 +8,13 @@
 
   .field
     = f.label :question
-    = f.text_area :question
+    = f.text_area :question, autofocus: true
   .field
     = f.label :answer
     = f.text_area :answer
   .field
     = f.label :tag_list
-    = f.text_field :tag_list
+    = f.text_field :tag_list, autocomplete: "off"
   .field
     = f.label :status
     = f.number_field :status
