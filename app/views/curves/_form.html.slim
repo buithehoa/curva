@@ -1,18 +1,15 @@
   = form_for @curve do |f|
-    - if @curve.errors.any?
-      #error_explanation
-        h2 = "#{pluralize(@curve.errors.count, "error")} prohibited this curve from being saved:"
-        ul
-          - @curve.errors.full_messages.each do |message|
-            li = message
-
     div
       = f.label :question, "Question:"
       = f.text_area :question, rows: 8,  autofocus: true
+      - if @curve.errors[:question].present?
+        small class="error" = @curve.errors.full_messages_for(:question).first
 
     div
       = f.label :tag_list
       = f.text_field :tag_list, autocomplete: "off"
+      - if @curve.errors[:tag_list].present?
+        small class="error" = @curve.errors.full_messages_for(:tag_list).first
 
     div
       .actions = f.submit 'Save'
