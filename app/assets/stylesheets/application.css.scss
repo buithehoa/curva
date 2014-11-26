@@ -17,6 +17,10 @@
  *= require curva
  */
 
+.icon-bar > * {
+  padding: 0 0 0.25rem 0;
+}
+
 small.error {
   margin-top: -1rem;
 }
