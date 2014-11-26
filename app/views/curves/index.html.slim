@@ -4,7 +4,6 @@ table
   thead
     tr
       th Question
-      th Answer
       th Status
       th
       th
@@ -14,7 +13,6 @@ table
     - @curves.each do |curve|
       tr
         td = curve.question
-        td = curve.answer
         td = curve.status
         td = link_to 'Show', curve
         td = link_to 'Edit', edit_curve_path(curve)
