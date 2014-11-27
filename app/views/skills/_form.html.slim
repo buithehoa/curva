@@ -6,7 +6,9 @@
         - @skill.errors.full_messages.each do |message|
           li = message
 
-  .field
+  div
     = f.label :name
-    = f.text_field :name
-  .actions = f.submit 'Save'
+    = f.text_field :name, autofocus: true
+
+  div
+    .actions = f.submit 'Save'
