@@ -7,7 +7,7 @@
 
   div
     = f.label :tag_list
-    = f.text_field :tag_list, autocomplete: "off"
+    = f.text_field :tag_list, id: "skillTagList", class: "xxx", autocomplete: "off"
     - if @skill.errors[:tag_list].present?
       small class="error" = @skill.errors.full_messages_for(:tag_list).first
 

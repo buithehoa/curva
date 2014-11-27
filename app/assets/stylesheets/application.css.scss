@@ -12,10 +12,27 @@
  *
  *= require foundation_and_overrides
  *= require foundation-icons
+ *= require token-input
  *= require_tree .
  *= require_self
- *= require curva
  */
+
+div.token-input-dropdown-facebook {
+}
+
+ul.token-input-list-facebook {
+  margin-bottom: 1rem;
+  width: 100%;
+  li input {
+    width: 100%;
+  }
+
+  li.token-input-input-token-facebook {
+    input {
+      width: 100% !important;
+    }
+  }
+}
 
 .icon-bar > * {
   padding: 0 0 0.25rem 0;
