@@ -1,14 +1,15 @@
 = form_for @skill do |f|
-  - if @skill.errors.any?
-    #error_explanation
-      h2 = "#{pluralize(@skill.errors.count, "error")} prohibited this skill from being saved:"
-      ul
-        - @skill.errors.full_messages.each do |message|
-          li = message
-
   div
     = f.label :name
     = f.text_field :name, autofocus: true
+    - if @skill.errors[:name].present?
+      small class="error" = @skill.errors.full_messages_for(:name).first
+
+  div
+    = f.label :tag_list
+    = f.text_field :tag_list, autocomplete: "off"
+    - if @skill.errors[:tag_list].present?
+      small class="error" = @skill.errors.full_messages_for(:tag_list).first
 
   div
     .actions = f.submit 'Save'
