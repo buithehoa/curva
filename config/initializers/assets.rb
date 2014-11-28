@@ -8,5 +8,5 @@ Rails.application.config.assets.version = '1.0'
 # Rails.application.config.assets.precompile += %w( search.js )
 
 # Controller-specific JavaScript scripts
-Rails.application.config.assets.precompile += %w( curves.js skills.js workspace.js )
+Rails.application.config.assets.precompile += %w( curves.js skills.js tags.js workspace.js )
 
