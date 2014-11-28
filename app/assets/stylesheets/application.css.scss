@@ -40,6 +40,23 @@ ul.token-input-list-facebook {
 
   li.token-input-token-facebook {
     margin-top: 6px;
+    padding: 1px 6px;
+    color: white;
+    background-color: #008cba;
+    border: 1px solid #008cba;
+
+    p {
+      font-size: 0.9rem;
+      font-weight: bold;
+    }
+
+    span {
+      position: relative;
+      top: -6px;
+      padding: 0 3px 0 8px;
+      margin-left: 0;
+      font-size: 1rem;
+    }
   }
 
   input#token-input-skillTagList {
