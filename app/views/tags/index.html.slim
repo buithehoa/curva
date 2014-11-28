@@ -1,5 +1,8 @@
 h1 Listing tags
 
+= link_to 'New Tag', new_tag_path
+br
+
 div class="tag-cloud text-center"
   - tag_cloud(@tag_counts, %w(css1 css2 css3 css4)) do |tag, css_class|
     = link_to tag.name, { :action => :show, :id => tag.name }, :class => "#{css_class} tag", title: tag.count
@@ -20,6 +23,3 @@ table
         td = link_to 'Edit', edit_tag_path(tag)
         td = link_to 'Destroy', tag, data: {:confirm => 'Are you sure?'}, :method => :delete
 
-br
-
-= link_to 'New Tag', new_tag_path
