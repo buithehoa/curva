@@ -23,14 +23,29 @@ div.token-input-dropdown-facebook {
 ul.token-input-list-facebook {
   margin-bottom: 1rem;
   width: 100%;
+  padding: 0 4px;
+
   li input {
     width: 100%;
+    padding: 3px 4px;
   }
 
   li.token-input-input-token-facebook {
     input {
       width: 100% !important;
     }
+  }
+
+  li.token-input-token-facebook {
+    margin-top: 6px;
+  }
+
+  input#token-input-skillTagList {
+    box-shadow: none;
+  }
+
+  input#token-input-skillTagList:focus {
+    background: none;
   }
 }
 
