@@ -17,6 +17,44 @@
  *= require_self
  */
 
+.tag {
+  color: white;
+  background-color: #008cba;
+  border: 1px solid #008cba;
+  border-radius: 5px;
+}
+
+.tag-cloud {
+  margin-bottom: 1rem;
+  line-height: 2.5rem;
+  word-wrap: break-word;
+
+  a {
+    margin-right: 0.5rem;
+    padding: 0.2rem 0.5rem;
+  }
+
+  a:visited {
+    color: white;
+  }
+
+  .css1 {
+    font-size: 1.0rem;
+  }
+
+  .css2 {
+    font-size: 1.2rem;
+  }
+
+  .css3 {
+    font-size: 1.4rem;
+  }
+
+  .css4 {
+    font-size: 1.6rem;
+  }
+}
+
 div.token-input-dropdown-facebook {
   font-family: inherit;
 }

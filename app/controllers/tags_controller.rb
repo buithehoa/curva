@@ -5,6 +5,7 @@ class TagsController < ApplicationController
   # GET /tags.json
   def index
     @tags = Tag.all
+    @tag_counts = Curve.all_tag_counts(order: :name)
   end
 
   # GET /tags/1
