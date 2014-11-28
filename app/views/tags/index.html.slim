@@ -1,6 +1,6 @@
 h1 Listing tags
 
-div class="row tag-cloud text-center"
+div class="tag-cloud text-center"
   - tag_cloud(@tag_counts, %w(css1 css2 css3 css4)) do |tag, css_class|
     = link_to tag.name, { :action => :show, :id => tag.name }, :class => "#{css_class} tag", title: tag.count
 
