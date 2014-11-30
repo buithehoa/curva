@@ -3,7 +3,16 @@
 # # You can use CoffeeScript in this file: http://coffeescript.org/
 
 $(document).on "ready page:load", ->
-  $('#skillTagList').tokenInput "/tags/search",
-    theme: "facebook",
-    tokenValue: "name"
+  skillTagList = $('#skillTagList');
+
+  if skillTagList.length
+    skillTagList.tokenInput "/tags/search",
+      theme: "facebook",
+      tokenValue: "name"
+
+    if skillTagList.attr('value')
+      tags = skillTagList.attr('value').split(', ')
+
+      tags.forEach (tag) ->
+        skillTagList.tokenInput "add", { id: 0, name: tag }
 

@@ -4,6 +4,11 @@ p
   strong Name:
   = @skill.name
 
+p
+  strong Tags:
+  = @skill.tag_list
+
+
 = link_to 'Edit', edit_skill_path(@skill)
 '|
 = link_to 'Back', skills_path
