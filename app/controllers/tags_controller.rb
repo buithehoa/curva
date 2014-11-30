@@ -1,6 +1,11 @@
 class TagsController < ApplicationController
   before_action :set_tag, only: [:show, :edit, :update, :destroy]
 
+  def search
+    tags = Tag.where([ "name LIKE ?", "%#{params[:q]}%" ])
+    render json: tags
+  end
+
   # GET /tags
   # GET /tags.json
   def index

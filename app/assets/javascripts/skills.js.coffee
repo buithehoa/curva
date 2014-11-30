@@ -3,5 +3,7 @@
 # # You can use CoffeeScript in this file: http://coffeescript.org/
 
 $(document).on "ready page:load", ->
-  $('#skillTagList').tokenInput "http://jquery-tokeninput-demo.herokuapp.com",
-    theme: "facebook"
+  $('#skillTagList').tokenInput "/tags/search",
+    theme: "facebook",
+    tokenValue: "name"
+
