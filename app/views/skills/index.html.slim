@@ -1,19 +1,22 @@
-= link_to 'New Skill', new_skill_path, class: "button", data: { no_turbolink: true }
-br
+div class="large-6 columns"
+  = link_to 'New Skill', new_skill_path, class: "button", data: { no_turbolink: true }
+  br
 
-table
-  thead
-    tr
-      th Name
-      th
-      th
-      th
-
-  tbody
-    - @skills.each do |skill|
+  table
+    thead
       tr
-        td = skill.name
-        td = link_to 'Show', skill
-        td = link_to 'Edit', edit_skill_path(skill)
-        td = link_to 'Destroy', skill, data: {:confirm => 'Are you sure?'}, :method => :delete
+        th Name
+        th
+        th
+        th
+
+    tbody
+      - @skills.each do |skill|
+        tr
+          td = skill.name
+          td = link_to 'Show', skill
+          td = link_to 'Edit', edit_skill_path(skill)
+          td = link_to 'Destroy', skill, data: {:confirm => 'Are you sure?'}, :method => :delete
+
+div class="large-6 columns"
 
