@@ -17,6 +17,12 @@
  *= require_self
  */
 
+@import "normalize";
+
+.button {
+  margin-right: 1rem;
+}
+
 .tag {
   color: white;
   background-color: #43ac6a;
@@ -125,10 +131,6 @@ form {
 
   input[type=text], textarea {
     font-size: 1rem;
-  }
-
-  .actions input[type=submit] {
-    font-size: 1.2rem;
   }
 }
 

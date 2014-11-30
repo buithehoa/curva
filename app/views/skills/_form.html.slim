@@ -12,4 +12,7 @@
       small class="error" = @skill.errors.full_messages_for(:tag_list).first
 
   div
-    .actions = f.submit 'Save'
+    .actions
+      = f.submit 'Save', class: "button"
+      = link_to 'Back', skills_path, class: "button secondary"
+
