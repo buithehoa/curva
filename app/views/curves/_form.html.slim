@@ -7,7 +7,7 @@
 
     div
       = f.label :tag_list
-      = f.text_field :tag_list, autocomplete: "off"
+      = f.text_field :tag_list, id: "curveTagList", autocomplete: "off"
       - if @curve.errors[:tag_list].present?
         small class="error" = @curve.errors.full_messages_for(:tag_list).first
 

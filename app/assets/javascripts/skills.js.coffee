@@ -3,7 +3,7 @@
 # # You can use CoffeeScript in this file: http://coffeescript.org/
 
 $(document).on "ready page:load", ->
-  skillTagList = $('#skillTagList');
+  skillTagList = $('#skillTagList')
 
   if skillTagList.length
     skillTagList.tokenInput "/tags/search",

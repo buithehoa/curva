@@ -78,6 +78,11 @@ ul.token-input-list-facebook {
   li.token-input-input-token-facebook {
     input {
       width: 100% !important;
+      box-shadow: none;
+    }
+
+    input:focus {
+      background: none;
     }
   }
 
@@ -102,13 +107,6 @@ ul.token-input-list-facebook {
     }
   }
 
-  input#token-input-skillTagList {
-    box-shadow: none;
-  }
-
-  input#token-input-skillTagList:focus {
-    background: none;
-  }
 }
 
 .icon-bar > * {
