@@ -16,6 +16,6 @@ div class="large-8 columns"
           td = curve.question
           td = curve.status
           td = link_to 'Show', curve
-          td = link_to 'Edit', edit_curve_path(curve)
+          td = link_to 'Edit', edit_curve_path(curve), data: { no_turbolink: true }
           td = link_to 'Destroy', curve, data: {:confirm => 'Are you sure?'}, :method => :delete
 
