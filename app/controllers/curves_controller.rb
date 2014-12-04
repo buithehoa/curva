@@ -4,7 +4,7 @@ class CurvesController < ApplicationController
   # GET /curves
   # GET /curves.json
   def index
-    @curves = Curve.all
+    @curves = Curve.all.order("created_at DESC")
   end
 
   # GET /curves/1
