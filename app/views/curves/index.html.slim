@@ -1,23 +1,21 @@
-h1 Listing curves
+div class="large-8 columns"
+  = link_to 'New Skill', new_curve_path, class: "button", data: { no_turbolink: true }
 
-table
-  thead
-    tr
-      th Question
-      th Status
-      th
-      th
-      th
-
-  tbody
-    - @curves.each do |curve|
+  table
+    thead
       tr
-        td = curve.question
-        td = curve.status
-        td = link_to 'Show', curve
-        td = link_to 'Edit', edit_curve_path(curve)
-        td = link_to 'Destroy', curve, data: {:confirm => 'Are you sure?'}, :method => :delete
+        th Question
+        th Status
+        th
+        th
+        th
 
-br
+    tbody
+      - @curves.each do |curve|
+        tr
+          td = curve.question
+          td = curve.status
+          td = link_to 'Show', curve
+          td = link_to 'Edit', edit_curve_path(curve)
+          td = link_to 'Destroy', curve, data: {:confirm => 'Are you sure?'}, :method => :delete
 
-= link_to 'New Curve', new_curve_path
