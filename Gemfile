@@ -47,6 +47,8 @@ group :development do
   gem 'spring'
 
   gem 'thin'
+
+  gem 'byebug'
 end
 
 # Use ActiveModel has_secure_password
