@@ -8,19 +8,19 @@ html
 
   body
     div class="icon-bar six-up"
-      = link_to workspace_path, class: "item" do
+      = link_to workspace_path, class: "item #{selected_item_class(workspace_path)}" do
         i class="fi-home"
         label Home
 
-      = link_to curves_path, class: "item" do
+      = link_to curves_path, class: "item #{selected_item_class(curves_path)}" do
         i class="fi-puzzle"
         label Curves
 
-      = link_to skills_path, class: "item" do
+      = link_to skills_path, class: "item #{selected_item_class(skills_path)}" do
         i class="fi-social-skillshare"
         label Skills
 
-      = link_to tags_path, class: "item" do
+      = link_to tags_path, class: "item #{selected_item_class(tags_path)}" do
         i class="fi-price-tag"
         label Tags
 

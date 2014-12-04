@@ -113,6 +113,12 @@ ul.token-input-list-facebook {
   padding: 0 0 0.25rem 0;
 }
 
+.icon-bar {
+  a.item.selected {
+    background-color: #008cba;
+  }
+}
+
 small.error {
   margin-top: -1rem;
 }
