@@ -21,3 +21,11 @@
 
 en:
   hello: "Hello world"
+
+  curves:
+    form:
+      question: "Question"
+      tag_list: "Tag List"
+      save: "Save"
+      back: "Back"
+

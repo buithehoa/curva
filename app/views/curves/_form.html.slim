@@ -1,18 +1,18 @@
   = form_for @curve do |f|
     div
-      = f.label :question, "Question:"
+      = f.label :question, t('.question')
       = f.text_area :question, rows: 8,  autofocus: true
       - if @curve.errors[:question].present?
         small class="error" = @curve.errors.full_messages_for(:question).first
 
     div
-      = f.label :tag_list
+      = f.label :tag_list, t('.tag_list')
       = f.text_field :tag_list, id: "curveTagList", autocomplete: "off"
       - if @curve.errors[:tag_list].present?
         small class="error" = @curve.errors.full_messages_for(:tag_list).first
 
     div
       .actions
-        = f.submit 'Save', class: "button"
-        = link_to 'Back', curves_path, class: "button secondary"
+        = f.submit t('.save'), class: "button"
+        = link_to t('.back'), curves_path, class: "button secondary"
 
