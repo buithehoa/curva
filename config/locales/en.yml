@@ -29,3 +29,9 @@ en:
       save: "Save"
       back: "Back"
 
+  tags:
+    form:
+      name: "Name"
+      save: "Save"
+      back: "Back"
+

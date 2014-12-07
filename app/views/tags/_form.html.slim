@@ -6,7 +6,10 @@
         - @tag.errors.full_messages.each do |message|
           li = message
 
-  .field
-    = f.label :name
+  div
+    = f.label :name, t('.name')
     = f.text_field :name
-  .actions = f.submit 'Save'
+
+  div.actions
+    = f.submit t('.save'), class: "button"
+    = link_to t('.back'), tags_path, class: "button secondary"
