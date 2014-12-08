@@ -11,10 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141122163146) do
+ActiveRecord::Schema.define(version: 20141209133308) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "curve_transitions", force: true do |t|
+    t.string   "to_state",                null: false
+    t.json     "metadata",   default: {}
+    t.integer  "sort_key",                null: false
+    t.integer  "curve_id",                null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "curve_transitions", ["curve_id"], name: "index_curve_transitions_on_curve_id", using: :btree
+  add_index "curve_transitions", ["sort_key", "curve_id"], name: "index_curve_transitions_on_sort_key_and_curve_id", unique: true, using: :btree
 
   create_table "curves", force: true do |t|
     t.text     "question"

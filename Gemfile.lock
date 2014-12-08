@@ -120,6 +120,7 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (>= 2.8, < 4.0)
+    statesman (1.1.0)
     temple (0.6.10)
     therubyracer (0.12.1)
       libv8 (~> 3.16.14.0)
@@ -159,6 +160,7 @@ DEPENDENCIES
   slim (~> 2.1.0)
   slim-rails (~> 2.1.5)
   spring
+  statesman (~> 1.1.0)
   therubyracer (~> 0.12.1)
   thin
   turbolinks (~> 2.3.0)
