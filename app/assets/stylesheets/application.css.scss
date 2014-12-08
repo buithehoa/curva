@@ -115,7 +115,11 @@ ul.token-input-list-facebook {
 
 .icon-bar {
   a.item.selected {
-    background-color: #008cba;
+    background-color: #a0d3e8;
+
+    i, label {
+      color: #333;
+    }
   }
 }
 
