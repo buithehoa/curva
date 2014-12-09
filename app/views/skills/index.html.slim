@@ -15,7 +15,7 @@ div class="large-6 columns"
         tr
           td = skill.name
           td = link_to 'Show', skill
-          td = link_to 'Edit', edit_skill_path(skill)
+          td = link_to 'Edit', edit_skill_path(skill), data: { no_turbolink: true }
           td = link_to 'Destroy', skill, data: {:confirm => 'Are you sure?'}, :method => :delete
 
 div class="large-6 columns"
