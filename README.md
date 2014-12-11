@@ -1,37 +1,30 @@
 # curva
 
-## System Dependencies
-* Acts As Taggable On
-* PostgreSQL
-* Ruby on Rails 4
-* Slim
-* Thin
+Each question/answer pair is called a curve
+Each curve is tagged with multiple tags
+Each tag is assigned a rat
+ing from 1 to 5
+The rating of a curve is the average of all the ratings of all the tags that are used to tag the curve
 
-== README
+Pages include
+  Tag
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+    Create a tag
+    Edit a tag[HUBPT-5806
+    List tags
+    Delete a tag
 
-Things you may want to cover:
+  Curve
+    Create a curve
+    Edit a curve
+    View a curve
+      Suggest next curve > Show curves which have common tags
+    Delete a curve
 
-* Ruby version
+  Workspace
+    List curves ordered descendantly by rating
 
-* System dependencies
+    Stats
+      github-like progress calendar
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+  Search for curves
